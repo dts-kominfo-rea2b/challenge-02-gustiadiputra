@@ -34,9 +34,9 @@ function lakukanLooping(arrPegawai) {
           yang berisi jumlah pria dari masing masing pegawai
       */
       let jumlahPria = 0;
-      for (hasilLooping in dataYangAkanDilooping){
-        if(dataYangAkanDilooping[hasilLooping].jenisKelamin == "M"){
-          jumlahPria++
+      for (let jlmpria=0; jlmpria<dataYangAkanDilooping.length; jlmpria++){
+        if(dataYangAkanDilooping[jlmpria].jenisKelamin == "M"){
+          jumlahPria=jumlahPria+1;
         }  
       }
       
@@ -46,9 +46,9 @@ function lakukanLooping(arrPegawai) {
           yang berisi jumlah wanita dari masing masing pegawai
       */
       let jumlahWanita = 0;
-      for (hasilLooping in dataYangAkanDilooping){
-        if(dataYangAkanDilooping[hasilLooping].jenisKelamin == "F"){
-          jumlahWanita++
+      for (jlmwanita=0; jlmwanita<dataYangAkanDilooping.length; jlmwanita++){
+        if(dataYangAkanDilooping[jlmwanita].jenisKelamin == "F"){
+          jumlahWanita= jumlahWanita+1;
         }
       }
       /*
